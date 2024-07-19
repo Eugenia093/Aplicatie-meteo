@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicatie meteo</title>
+</head>
+<body>
+
+   <div class="page-container">
+    <div class="sidebar">
+        <form id="cityForm" class="city-form">
+        <label  for="city">Introduceti orasul</label>
+        <input id="city" type="text" placeholder="Chisinau, Balti, Orhei" required>
+        <button class="btn btn-search">Cauta</button>
+        </form>
+        <div class="separator">
+            <span class="separator-text">sau</span>
+        </div>
+        <button id="locationBtn" class="btn btn-location">Foloseste locatia curenta</button>
+    </div>
+    <div class="page-content">
+        <div>
+            <h2>Vremea in chisinau astazi</h2>
+            <div class="weather-panel today">
+                <div class="weather-details">
+                    <p class="date">2024-07-13, 20:00</p>
+                    <p>Temperatura: 30.7°C</p>
+                    <P>Vant: 6.8 km/h</P>
+                    <p>Umiditate: 30%</p>
+                </div>
+                <div>
+                    <img src="cloudy_files/sunny.svg" alt="weather-icon">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Vremea in Chisinau in urmatoarele zile</h2>
+            <div class="weather-items">
+                <div class="weather-panel forecast">
+                    <div class="weather-details">
+                        <p class="date">2024-07-14, 16:00</p>
+                        <p>Temperatura: 36.7°C</p>
+                        <P>Vant: 5.8 km/h</P>
+                        <p>Umiditate: 35%</p>
+                    </div>
+                    <div>
+                        <img src="cloudy_files/cloudy-day.svg" alt="weather-icon">
+                    </div>
+                </div>
+
+                <div class="weather-panel forecast">
+                    <div class="weather-details">
+                        <p class="date">2024-07-15, 18:00</p>
+                        <p>Temperatura: 35.7°C</p>
+                        <P>Vant: 6.7 km/h</P>
+                        <p>Umiditate: 30%</p>
+                    </div>
+                    <div>
+                        <img src="cloudy_files/sunny.svg" alt="weather-icon">
+                    </div>
+                </div>
+
+                <div class="weather-panel forecast">
+                    <div class="weather-details">
+                        <p class="date">2024-07-16, 14:00</p>
+                        <p>Temperatura: 38.5°C</p>
+                        <P>Vant: 6.8 km/h</P>
+                        <p>Umiditate: 34%</p>
+                    </div>
+                    <div>
+                        <img src="cloudy_files/sunny.svg" alt="weather-icon">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
